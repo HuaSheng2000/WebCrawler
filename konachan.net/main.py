@@ -3,13 +3,14 @@ from bs4 import BeautifulSoup
 import os
 import traceback
 
+
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safar
-i/537.36"
-        , "Connection": "keep-alive"
-        , "Referer": "image / webp, image / *, * / *;q = 0.8"
-        ,"Accept":"image/webp,image/*,*/*;q=0.8"
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
+    "Connection": "keep-alive",
+    "Referer": "image / webp, image / *, * / *;q = 0.8",
+    "Accept": "image/webp,image/*,*/*;q=0.8"
 }
+
 
 def download(url, filename):
     if os.path.exists(filename):
